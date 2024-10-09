@@ -1,0 +1,2 @@
+Prefix plugins/PlotFoldChange/example/
+Plugin PlotFoldChange inputfile parameters.plotFC.txt outputfile foldchange.pdf
