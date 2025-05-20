@@ -24,6 +24,8 @@ output <- function(outputfile) {
 	EBOut <- readRDS(paste(pfix, parameters["empirical", 2], sep="/"))
 	GeneFC <- readRDS(paste(pfix, parameters["genefc", 2], sep="/"))
         pdf(outputfile)
+	print(str(EBOut))
+	write.csv(EBOut$DataNorm, paste(outputfile, "csv", sep="."))
 	PlotPostVsRawFC(EBOut,GeneFC)
 }
 
